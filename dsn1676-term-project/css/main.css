@@ -20,10 +20,30 @@ html {
 
 .banner {
     background-color: #008485;
+    position: relative;
+    height: 340px;
 } 
 
-.flower {
-    position: relative;
+.outside {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 160px);
+    width: 320px;
+
+}
+
+.middle {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 160px);
+    width: 320px;
+}
+
+.inside {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 160px);
+    width: 320px;
 }
 
 .name {
@@ -31,19 +51,28 @@ html {
     font-size: 2.5em;
     color: #1a5858;
     text-align: center;
-    position: absolute;
-    top: 225px;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    width: 100%;
     background-color: #008485;
-    padding: 25px;
+    transform: translate(-50%, -50%);
+
 }
 
 .topline {
-    position:absolute;
-    top: 120px;
+    height: 8px;
+    top: 0;
+    left:0;
+    width: 100%;
+    position: absolute;
 }
 
 .bottomline {
+    height: 8px;
     position: absolute;
-    top: 200px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
