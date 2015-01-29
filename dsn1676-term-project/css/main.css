@@ -29,6 +29,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
+    animation: outside 10s infinite;
 
 }
 
@@ -76,3 +77,13 @@ html {
     width: 100%;
 }
 
+@keyframes outside {
+    
+    0% { 
+        transform: rotate(0deg)
+    }
+    
+    100% {
+        transform: rotate(360deg)
+    }
+}
