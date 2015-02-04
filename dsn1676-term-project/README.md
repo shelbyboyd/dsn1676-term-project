@@ -1,2 +1,2 @@
-# dsn1676-week-1
-Review all the things!
+#dsn1676-term-project
+Term Project - Portfolio Website
