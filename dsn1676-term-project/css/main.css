@@ -29,7 +29,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
-    animation: outside 20s linear infinite;
+    animation: outside 40s linear infinite;
 
 }
 
@@ -38,7 +38,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
-    animation: middle 10s linear infinite;
+    animation: middle 20s linear infinite;
 }
 
 .inside {
@@ -46,7 +46,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
-    animation: outside 20s linear infinite;
+    animation: outside 40s linear infinite;
 }
 
 .name {
