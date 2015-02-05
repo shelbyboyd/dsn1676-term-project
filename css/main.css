@@ -193,8 +193,8 @@ h1:hover {
 }
 
 .bird {
-    -wekbit-animation: bird 6s forwards;
-    animation: bird 6s forwards;
+    -wekbit-animation: bird 6s ease-in forwards;
+    animation: bird 6s ease-in forwards;
     z-index: 3;
 }
  
