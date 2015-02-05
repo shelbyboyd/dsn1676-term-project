@@ -67,6 +67,7 @@ body {
     left: 50%;
     width: 100%;
     background-color: #008485;
+    -webkit-transform: translate(-50%,-100%);
     transform: translate(-50%,-100%);
     z-index: 2;
 
@@ -82,6 +83,7 @@ h1 {
     color: #FFDABA;
     padding: 0;
     margin: 0;
+    -webkit-transition: 1s;
     transition: 1s;
 }
  
@@ -89,6 +91,7 @@ h1 {
     position: absolute;
     width: 2em;
     left: 50%;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
     opacity: 0;
     transition: 1s;
@@ -98,8 +101,10 @@ h1 {
     position: absolute;
     bottom:20px;
     left: 50%;
+    -webkit-transform: translate(-50%);
     transform: translate(-50%);
-
+    width: 100%;
+    text-align: center;
     
 }
 
@@ -188,14 +193,15 @@ h1:hover {
     top: 73px;
     left: 15px;
     width: 3em;
-    -wekbit-animation: flap 1s ease-in-out infinite;
-    animation: flap 1s ease-in-out infinite;
+    -webkit-animation: flap 1s linear infinite;
+    animation: flap 1s linear infinite;
 }
 
 .bird {
-    -wekbit-animation: bird 6s ease-in forwards;
+    -webkit-animation: bird 6s ease-in forwards;
     animation: bird 6s ease-in forwards;
     z-index: 3;
+    position: relative;
 }
  
 @-webkit-keyframes flap {
@@ -253,7 +259,7 @@ h1:hover {
     }
     
     100% {
-        -webkit-transform: translateX(80%) translateY(40%) rotateX(-40deg);
+        -webkit-transform: translateX(70%) translateY(40%) rotateX(-40deg);
     }
 }
 
@@ -274,11 +280,11 @@ h1:hover {
     }
     
     100% {
-        transform: translateX(80%) translateY(40%) rotateX(-40deg);
+        transform: translateX(80%) translateY(70%) rotateX(-40deg);
     }
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 70em) {
     .body {
         width: 7em;
     }
@@ -289,7 +295,7 @@ h1:hover {
     }
 }
 
-@media only screen and (min-width: 120em) {
+@media only screen and (min-width: 100em) {
      .body {
         width: 10em;
     }
