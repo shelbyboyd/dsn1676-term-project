@@ -197,6 +197,30 @@ h1:hover {
     animation: flap 1s linear infinite;
 }
 
+.body2 {
+    position: absolute;
+    width: 5.5em;
+    top: 80px;
+    left: 5px;
+}
+
+.bird2 {
+    -webkit-animation: bird2 1s forwards;
+    animation: bird2 1s forwards;
+    -webkit-animation-delay: bird2 6s forwards; 
+    animation-delay: bird2 6s forwards;
+}
+    
+.wing2 {
+    position: relative;
+    top: 73px;
+    left: 15px;
+    width: 3em;
+    -webkit-animation: flap 1s linear infinite;
+    animation: flap 1s linear infinite;
+
+}
+
 .bird {
     -webkit-animation: bird 6s ease-in forwards;
     animation: bird 6s ease-in forwards;
@@ -258,8 +282,14 @@ h1:hover {
         -webkit-transform: translateX(60%) translateY(20%) rotateX(40deg);
     }
     
+    99% {
+        -webkit-transform: translateX(70%) translateY(40%) rotateX(-40deg);
+        -webkit-opacity: 1;
+    }
+    
     100% {
         -webkit-transform: translateX(70%) translateY(40%) rotateX(-40deg);
+        -webkit-opacity: 0;
     }
 }
 
@@ -279,10 +309,80 @@ h1:hover {
         transform: translateX(60%) translateY(20%) rotateX(40deg);
     }
     
+    99% {
+        transform: translateX(80%) translateY(70%) rotateX(-40deg);
+        opacity: 1;
+    }
+    
     100% {
         transform: translateX(80%) translateY(70%) rotateX(-40deg);
+        opacity: 0;
     }
 }
+
+@-webkit-keyframes bird2 {
+    0% {
+        -webkit-transform: translate(0) rotate(0deg);
+        -webkit-opacity:0;
+    }
+    
+    25% { 
+        -webkit-transform:translateX(20%) translateY(-20%) rotateX(40deg);
+        -webkit-opacity:0;
+    }
+    
+    50% {
+        -webkit-transform: translateX(40%) translateY(-40%) rotateX(-40deg);
+        -webkit-opacity:0;
+    }
+    
+    75% {
+        -webkit-transform: translateX(60%) translateY(20%) rotateX(40deg);
+        -webkit-opacity:0;
+    }
+    
+    99% {
+        -webkit-transform: translateX(80%) translateY(70%) rotateX(-40deg);
+        -webkit-opacity:0;
+    }
+    
+    100% {
+        transform: translateX(80%) translateY(70%) rotateX(-40deg);
+        -webkit-opacity: 1;
+    }
+}
+
+@keyframes bird2 {
+    0% {
+        transform: translate(0) rotate(0deg);
+        opacity: 0;
+    }
+    
+    25% { 
+        transform:translateX(20%) translateY(-20%) rotateX(40deg);
+        opacity: 0;
+    }
+    
+    50% {
+        transform: translateX(40%) translateY(-40%) rotateX(-40deg);
+        opacity: 0;
+    }
+    
+    75% {
+        transform: translateX(60%) translateY(20%) rotateX(40deg);
+        opacity: 0;
+    }
+    
+    99% {
+        transform: translateX(80%) translateY(70%) rotateX(-40deg);
+        opacity:0;
+    }
+    
+    100% {
+        transform: translateX(80%) translateY(70%) rotateX(-40deg);
+        opacity: 1;
+    }
+} 
 
 @media only screen and (min-width: 70em) {
     .body {
@@ -292,6 +392,17 @@ h1:hover {
     .wing { 
         width: 5.5em;
         top: 40px;
+        left: -5px;
+    }
+    
+     .body2 {
+        width: 7em;
+    }
+    
+    .wing2 { 
+        width: 5.5em;
+        top: 40px;
+        left: -5px;
     }
 }
 
@@ -301,6 +412,16 @@ h1:hover {
     }
     
     .wing {
+        width: 8.5em;
+        top: 10px;
+        left: -10px;
+    }
+    
+     .body2 {
+        width: 10em;
+    }
+    
+    .wing2 {
         width: 8.5em;
         top: 10px;
         left: -10px;
