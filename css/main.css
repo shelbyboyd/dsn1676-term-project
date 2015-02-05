@@ -298,28 +298,6 @@ h1:hover {
 }
 
 
-@media only screen and (min-width: 70em) {
-    .body {
-        width: 7em;
-    }
-    
-    .wing { 
-        width: 5.5em;
-        top: 40px;
-        left: -5px;
-    }
-    
-     .body2 {
-        width: 7em;
-    }
-    
-    .wing2 { 
-        width: 5.5em;
-        top: 40px;
-        left: -5px;
-    }
-}
-
 @media only screen and (min-width: 100em) {
      .body {
         width: 10em;
