@@ -137,15 +137,14 @@ html {
 }
 
 
-
-
 .body {
     position: absolute;
     width: 5em;
     top: 80px;
     left: 0px;
     z-index: 3;
-    animation: body 5s ease-in-out forwards;
+    -webkit-animation: body 5s  forwards;
+    animation: body 5s  forwards;
 }
     
 .wing {
@@ -154,8 +153,32 @@ html {
     left: 8px;
     width: 3em;
     z-index: 3;
+    -wekbit-animation: body 5s linear forwards;
     animation: body 5s linear forwards;
+    -wekbit-animation: flap 2s ease-in-out infinite;
     animation: flap 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes body {
+    0% {
+        -webkit-transform:
+    }
+    
+    25% {
+        -webkit-transform: translateX(75%) translateY(40px)
+    }
+    
+    50% {
+        -wekbit-transform:translateX(150%) translateY(80px)
+    }
+    
+    75% {
+        -webkit-transform:translateX(225%)translateY(-5px)
+    }
+    
+    100% {
+        -webkit-transform:translateX(300%) translateY(-20px) scaleX(-1)
+    }
 }
 
 @keyframes body {
