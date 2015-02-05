@@ -29,6 +29,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
+    -webkit-animation: outside 40s linear infinite;
     animation: outside 40s linear infinite;
 
 }
@@ -38,6 +39,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
+    -webkit-animation: middle 20s linear infinite;
     animation: middle 20s linear infinite;
 }
 
@@ -46,6 +48,7 @@ html {
     top: 10px;
     left: calc(50% - 160px);
     width: 320px;
+    -webkit-animation: outside 40s linear infinite;
     animation: outside 40s linear infinite;
 }
 
