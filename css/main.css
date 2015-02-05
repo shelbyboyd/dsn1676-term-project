@@ -199,8 +199,8 @@ h1:hover {
 
 
 .bird {
-    -webkit-animation: bird 6s ease-in alternate;
-    animation: bird 6s ease-in alternate;
+    -webkit-animation: bird 6s ease-in;
+    animation: bird 6s ease-in ;
     z-index: 3;
     position: relative;
 }
