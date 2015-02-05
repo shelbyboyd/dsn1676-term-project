@@ -79,9 +79,10 @@ body {
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2em;
-    color: #E17A7B;
+    color: #FFDABA;
     padding: 0;
     margin: 0;
+    transition: 1s;
 }
  
 .arrow {
@@ -100,6 +101,10 @@ h1 {
     transform: translate(-50%);
 
     
+}
+
+h1:hover {
+    color: #E17A7B;
 }
 
 .headline:hover .arrow {
@@ -188,7 +193,7 @@ h1 {
 }
 
 .bird {
-    animation: bird 5s forwards;
+    animation: bird 6s forwards;
     z-index: 3;
 }
  
@@ -215,15 +220,21 @@ h1 {
 
 @keyframes bird {
     0% {
-        transform: translate(0) scale(1)
+        transform: translate(0) rotate(0deg)
+    }
+    
+    25% { transform:translateX(20%) translateY(-20%) rotateX(40deg) 
     }
     
     50% {
-        transform: translateX(40%) translateY(-40%); 
+        transform: translateX(40%) translateY(-40%) rotateX(-40deg); 
+    }
+    
+    75% {
+        transform: translateX(60%) translateY(20%) rotateX(40deg);
     }
     
     100% {
-        transform: translateX(80%) translateY(40%);
-        transform: scale(-1);
+        transform: translateX(80%) translateY(40%) rotateX(-40deg);
     }
 }
