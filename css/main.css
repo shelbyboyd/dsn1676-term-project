@@ -60,8 +60,14 @@ html {
     width: 100%;
     background-color: #008485;
     transform: translate(-50%, -50%);
+    z-index: 2;
 
 }
+
+.flower {
+    z-index: 1;
+}
+    
 
 .topline {
     height: 8px;
@@ -69,6 +75,7 @@ html {
     left:0;
     width: 100%;
     position: absolute;
+    z-index: 2
 }
 
 .bottomline {
@@ -77,6 +84,7 @@ html {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 2
 }
 
 @keyframes outside {
@@ -99,4 +107,8 @@ html {
     100% {
         transform: rotate(-360deg)
     }
+}
+
+.bird {
+    z-index:3;
 }
