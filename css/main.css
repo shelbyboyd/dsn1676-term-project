@@ -82,8 +82,6 @@ h1 {
     width: 2em;
     left: 50%;
     transform: translate(-50%);
- 
-  
 }
 
 .headline {
@@ -92,6 +90,7 @@ h1 {
     left: 50%;
     transform: translate(-50%);
     opacity: .5;
+    
 }
 
 .headline:hover {
