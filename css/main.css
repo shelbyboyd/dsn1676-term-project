@@ -18,6 +18,11 @@ html {
     
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .banner {
     background-color: #008485;
     position: relative;
@@ -72,9 +77,11 @@ html {
 }
     
 h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    color: #753855;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    color: #E17A7B;
+    padding: 0;
+    margin: 0;
 }
  
 .arrow {
@@ -82,19 +89,21 @@ h1 {
     width: 2em;
     left: 50%;
     transform: translate(-50%);
+    opacity: 0;
+    transition: 1s;
 }
 
 .headline {
     position: absolute;
-    top:300px;
+    bottom:20px;
     left: 50%;
     transform: translate(-50%);
-    opacity: .5;
+
     
 }
 
-.headline:hover {
-    opacity: 1;
+.headline:hover .arrow {
+    opacity: 1 ;
 }
 
 .topline {
@@ -166,7 +175,7 @@ h1 {
     position: absolute;
     width: 5em;
     top: 80px;
-    left: 0px;
+    left: 5px;
     z-index: 3;
     -webkit-animation: body 5s  forwards;
     animation: body 5s  forwards;
@@ -180,8 +189,8 @@ h1 {
     z-index: 3;
     -wekbit-animation: body 5s linear forwards;
     animation: body 5s linear forwards;
-    -wekbit-animation: flap 2s ease-in-out infinite;
-    animation: flap 2s ease-in-out infinite;
+    -wekbit-animation: flap 1.5s ease-in-out infinite;
+    animation: flap 1.5s ease-in-out infinite;
 }
 
 @-webkit-keyframes body {
