@@ -109,6 +109,61 @@ html {
     }
 }
 
-.bird {
-    z-index:3;
+
+.body {
+    position: absolute;
+    width: 5em;
+    top: 80px;
+    left: 0px;
+    z-index: 3;
+    animation: body 5s ease-in-out forwards;
 }
+    
+.wing {
+    width: 3em;
+    animation: wing 5s ease-in-out forwards;
+    animation: flap 2s ease-in-out infinite;
+}
+
+@keyframes body {
+    0% {
+        transform:
+    }
+    
+    50% {
+        transform:translateX(150%) translateY(80px)
+    }
+    
+    100% {
+        transform:translateX(300%) translateY(-20px) scaleX(-1)
+    }
+}
+ 
+@keyframes wing {
+    0% {
+        transform:
+    }
+    
+    50% {
+        transform:translateX(150%) translateY(80px)
+    }
+    
+    100% {
+        transform:translateX(300%) translateY(-20px) scaleX(-1)
+    }
+    
+}
+  
+@keyframes flap {
+    0% {
+        transform: scaleY(1)
+    }
+    
+    50% {
+        transform: scaleY(-1)
+    }
+    
+    100% {
+        transform: scaleY(1)
+    }
+            
