@@ -77,8 +77,8 @@ body {
 }
     
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
     color: #FFDABA;
     padding: 0;
     margin: 0;
@@ -178,7 +178,7 @@ h1:hover {
 
 .body {
     position: absolute;
-    width: 5em;
+    width: 5.5em;
     top: 80px;
     left: 5px;
 }
@@ -186,7 +186,7 @@ h1:hover {
 .wing {
     position: relative;
     top: 73px;
-    left: 8px;
+    left: 15px;
     width: 3em;
     -wekbit-animation: flap 1s ease-in-out infinite;
     animation: flap 1s ease-in-out infinite;
@@ -198,7 +198,6 @@ h1:hover {
 }
  
 
-  
 @keyframes flap {
    
     0% {
@@ -220,10 +219,10 @@ h1:hover {
 
 @keyframes bird {
     0% {
-        transform: translate(0) rotate(0deg)
+        transform: translate(0) rotate(0deg);
     }
     
-    25% { transform:translateX(20%) translateY(-20%) rotateX(40deg) 
+    25% { transform:translateX(20%) translateY(-20%) rotateX(40deg); 
     }
     
     50% {
@@ -236,5 +235,28 @@ h1:hover {
     
     100% {
         transform: translateX(80%) translateY(40%) rotateX(-40deg);
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    .body {
+        width: 7em;
+    }
+    
+    .wing { 
+        width: 5.5em;
+        top: 40px;
+    }
+}
+
+@media only screen and (min-width: 120em) {
+     .body {
+        width: 10em;
+    }
+    
+    .wing {
+        width: 8.5em;
+        top: 10px;
+        left: -10px;
     }
 }
