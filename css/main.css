@@ -98,6 +98,17 @@ html {
     }
 }
 
+@-webkit-keyframes outside {
+    
+    0% { 
+        -webkit-transform: rotate(0deg)
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
 @keyframes middle {
     
     0% { 
@@ -106,6 +117,17 @@ html {
     
     100% {
         transform: rotate(-360deg)
+    }
+}
+
+@-webkit-keyframes middle {
+    
+    0% { 
+        -webkit-transform: rotate(0deg)
+    }
+    
+    100% {
+        -webkit-transform: rotate(-360deg)
     }
 }
 
@@ -120,8 +142,9 @@ html {
 }
     
 .wing {
+    position: relative;
     width: 3em;
-    animation: wing 5s ease-in-out forwards;
+    animation: body 5s ease-in-out forwards;
     animation: flap 2s ease-in-out infinite;
 }
 
@@ -139,20 +162,7 @@ html {
     }
 }
  
-@keyframes wing {
-    0% {
-        transform:
-    }
-    
-    50% {
-        transform:translateX(150%) translateY(80px)
-    }
-    
-    100% {
-        transform:translateX(300%) translateY(-20px) scaleX(-1)
-    }
-    
-}
+
   
 @keyframes flap {
     0% {
@@ -166,4 +176,4 @@ html {
     100% {
         transform: scaleY(1)
     }
-            
+}      
