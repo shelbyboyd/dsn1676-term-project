@@ -201,7 +201,7 @@ h1:hover {
     position: absolute;
     width: 5.5em;
     top: 80px;
-    left: 5px;
+    left: -5px;
 }
 
 .bird2 {
@@ -209,12 +209,14 @@ h1:hover {
     animation: bird2 1s forwards;
     -webkit-animation-delay: bird2 6s forwards; 
     animation-delay: bird2 6s forwards;
+    z-index: 3;
+    position: relative;
 }
     
 .wing2 {
     position: relative;
     top: 73px;
-    left: 15px;
+    left: -10px;
     width: 3em;
     -webkit-animation: flap 1s linear infinite;
     animation: flap 1s linear infinite;
