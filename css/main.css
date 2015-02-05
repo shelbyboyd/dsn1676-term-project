@@ -176,9 +176,6 @@ h1 {
     width: 5em;
     top: 80px;
     left: 5px;
-    z-index: 3;
-    -webkit-animation: body 5s  forwards;
-    animation: body 5s  forwards;
 }
     
 .wing {
@@ -186,19 +183,13 @@ h1 {
     top: 73px;
     left: 8px;
     width: 3em;
+    -wekbit-animation: flap 1s ease-in-out infinite;
+    animation: flap 1s ease-in-out infinite;
+}
+
+.bird {
+    animation: bird 5s forwards;
     z-index: 3;
-    -wekbit-animation: body 5s linear forwards;
-    animation: body 5s linear forwards;
-    -wekbit-animation: flap 1.5s ease-in-out infinite;
-    animation: flap 1.5s ease-in-out infinite;
-}
-
-@-webkit-keyframes body {
-   
-}
-
-@keyframes body {
-
 }
  
 
@@ -219,4 +210,20 @@ h1 {
         transform: scaleY(1);
         transform-origin: bottom;
     }
-}      
+}  
+
+
+@keyframes bird {
+    0% {
+        transform: translate(0) scale(1)
+    }
+    
+    50% {
+        transform: translateX(40%) translateY(-40%); 
+    }
+    
+    100% {
+        transform: translateX(80%) translateY(40%);
+        transform: scale(-1);
+    }
+}
