@@ -193,10 +193,29 @@ h1:hover {
 }
 
 .bird {
+    -wekbit-animation: bird 6s forwards;
     animation: bird 6s forwards;
     z-index: 3;
 }
  
+@-webkit-keyframes flap {
+   
+    0% {
+        -webkit-transform: scaleY(1);
+        -wekbit-transform-origin: bottom;
+    }
+    
+    50% {
+        -webkit-transform: scaleY(-1);
+        -webkit-transform-origin: bottom;
+    }
+    
+    100% {
+        -webkit-transform: scaleY(1);
+        -webkit-transform-origin: bottom;
+    }
+}  
+
 
 @keyframes flap {
    
@@ -216,6 +235,27 @@ h1:hover {
     }
 }  
 
+@-webkit-keyframes bird {
+    0% {
+        -webkit-transform: translate(0) rotate(0deg);
+    }
+    
+    25% { 
+        -webkit-transform:translateX(20%) translateY(-20%) rotateX(40deg); 
+    }
+    
+    50% {
+        -webkit-transform: translateX(40%) translateY(-40%) rotateX(-40deg); 
+    }
+    
+    75% {
+        -webkit-transform: translateX(60%) translateY(20%) rotateX(40deg);
+    }
+    
+    100% {
+        -webkit-transform: translateX(80%) translateY(40%) rotateX(-40deg);
+    }
+}
 
 @keyframes bird {
     0% {
