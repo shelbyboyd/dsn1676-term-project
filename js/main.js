@@ -1,6 +1,6 @@
-var $arrow = $('.arrow');
+var $nav = $('nav');
 var $navBtn = $ ('.nav-button');
 
 $navBtn.on ('click', function () {
-    $arrow.toggleClass ('nav-show');
+    $nav.toggleClass ('nav-show');
 });
