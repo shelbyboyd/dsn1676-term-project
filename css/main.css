@@ -86,8 +86,9 @@ h1 {
     -webkit-transition: 1s;
     transition: 1s;
 }
- 
-.arrow {
+
+.btn-nav {
+    background-image: url(../images/arrow.svg);
     position: absolute;
     width: 2em;
     left: 50%;
@@ -96,7 +97,17 @@ h1 {
     opacity: 0;
     transition: 1s;
 }
-
+    
+<!--.arrow {
+    position: absolute;
+    width: 2em;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+-->
 .headline {
     position: absolute;
     bottom:20px;
@@ -199,10 +210,12 @@ h1:hover {
 
 
 .bird {
-    -webkit-animation: bird 6s ease-in;
-    animation: bird 6s ease-in ;
+    -webkit-animation: bird 6s ease-in forwards;
+    animation: bird 6s ease-in forwards;
     z-index: 3;
     position: relative;
+    -webkit-transition: opacity 5s forwards;
+    transition: opacity 5s forwards;
 }
 
 @-webkit-keyframes flap {
@@ -279,7 +292,7 @@ h1:hover {
     }
     
     50% {
-        transform: translateX(40%) translateY(-40%) rotateX(-40deg); 
+        transform: translateX(40%) translateY(-40%) rotateX(40deg); 
     }
     
     75% {
@@ -297,12 +310,121 @@ h1:hover {
     }
 }
 
+.body2 {
+    position: absolute;
+    width: 10em;
+    top: 40px;
+    left: 5px;
+}
+
+.wing2 {
+    position: relative;
+    top: 5px;
+    left: 50px;
+    width: 6em;
+    -webkit-animation: flap2 1s linear infinite;
+    animation: flap2 1s linear infinite;
+    transform:translateX(100%);
+    transform-origin: center;
+}
+
+
+.bird2 {
+    -webkit-animation: bird2 6s ease-in forwards;
+    animation: bird2 6s ease-in forwards;
+    z-index:3;
+    position: relative;
+    -webkit-transition: opacity 5s forwards;
+    transition: opacity 5s forwards;
+}
+
+@-webkit-keyframes flap2 {
+   
+    0% {
+        -webkit-transform: scaleY(1);
+        -wekbit-transform-origin: bottom;
+    }
+    
+    50% {
+        -webkit-transform: scaleY(-1);
+        -webkit-transform-origin: bottom;
+    }
+    
+    100% {
+        -webkit-transform: scaleY(1);
+        -webkit-transform-origin: bottom;
+    }
+}  
+
+
+@keyframes flap2 {
+   
+    0% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    
+    50% {
+        transform: scaleY(-1);
+        transform-origin: bottom;
+    }
+    
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+}  
+
+@-webkit-keyframes bird2 {
+    0% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    
+     99% {
+        transform: translateX(70%) translateY(-70%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(70%) translateY(-70%);
+        opacity: 1;
+    }
+}
+
+@keyframes bird2 {
+    0% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    
+    99% {
+        transform: translateX(70%) translateY(-70%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(70%) translateY(-70%);
+        opacity: 1;
+    }
+   
+}
+
 @media only screen and (min-width: 40em) {
     .body {
         width: 10em;
     }
     
     .wing {
+        width: 8em;
+        top: 15px;
+    }
+    
+    .body2 {
+        width: 10em;
+    }
+    
+    .wing2 {
         width: 8em;
         top: 15px;
     }
@@ -314,6 +436,15 @@ h1:hover {
     }
     
     .wing {
+        width: 8em;
+        top: 5px;
+    }
+    
+    .body2 {
+        width: 11.5em;
+    }
+    
+    .wing2 {
         width: 8em;
         top: 5px;
     }
