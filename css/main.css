@@ -59,7 +59,7 @@ body {
 
 .name {
     font-family: 'Trocchi', serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: #1a5858;
     text-align: center;
     position: absolute;    
@@ -70,6 +70,7 @@ body {
     -webkit-transform: translate(-50%,-100%);
     transform: translate(-50%,-100%);
     z-index: 2;
+    
 
 }
 
@@ -92,19 +93,19 @@ h2 {
     font-size: 1em;
     color: #FFDABA;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     float: left;
-    width: 33%;
+    width: 100%;
 }
 
 nav {
     background-color: #753855;
     overflow: hidden;
-    height: 5em;
+    height: 100%;
     opacity: 0;
-    transition: all 1s ease-in linear;
-    -webkit-transition: all 1s ease-in linear;
+    transition: all 3s ease-in forwards;
+    -webkit-transition: all 3s ease-in forwards;
 }
 
 .nav-show {
@@ -112,21 +113,21 @@ nav {
 }
     
 .nav-button {
+    border: none;
+    margin: 0 auto;
+    
+}
+
+.arrow {
     position: absolute;
-    width: 4em;
-    height: 4em;
+    width: 2.5em;
+    height: 2.5em;
     left: 50%;
     -webkit-transform: translate(-50%);
     transform: translate(-50%);
     opacity: 0;
     transition: 1s;
-    background-image: url(../images/arrow.svg);
-    background-image: 100% 100%;
-    background-color: transparent;
-    border: none;
-    margin-bottom: 10px;
 }
-
 
 .headline {
     position: absolute;
@@ -143,18 +144,19 @@ h1:hover {
     color: #E17A7B;
 }
 
-.headline:hover .nav-button {
+.headline:hover .arrow {
     opacity: 1 ;
 }
 
 
 .topline {
-    height: 8px;
-    top: 0;
+    height: 100%;
+    top: -45px;
     left:0;
     width: 100%;
     position: absolute;
-    z-index: 2
+    z-index: 2;
+    
 }
 
 .bottomline {
@@ -293,20 +295,20 @@ h1:hover {
         -webkit-transform: translateX(60%) translateY(20%) rotateX(40deg);
     }
     
-    99% {
-        -webkit-transform: translateX(70%) translateY(40%) rotateX(-40deg);
-        -webkit-opacity: 1;
+    92% {
+        opacity: 1;
     }
     
     100% {
         -webkit-transform: translateX(70%) translateY(40%) rotateX(-40deg);
-        -webkit-opacity: 0;
+        opacity: 0;
     }
 }
 
 @keyframes bird {
     0% {
         transform: translate(0) rotate(0deg);
+        opacity: 1;
     }
     
     25% { transform:translateX(20%) translateY(-20%) rotateX(40deg); 
@@ -320,8 +322,7 @@ h1:hover {
         transform: translateX(60%) translateY(20%) rotateX(40deg);
     }
     
-    99% {
-        transform: translateX(80%) translateY(70%) rotateX(-40deg);
+    92% {
         opacity: 1;
     }
     
@@ -333,8 +334,8 @@ h1:hover {
 
 .body2 {
     position: absolute;
-    width: 10em;
-    top: 40px;
+    width: 8em;
+    top: 100px;
     left: 5px;
 }
 
@@ -402,7 +403,7 @@ h1:hover {
         opacity: 0;
     }
     
-     99% {
+     92% {
         transform: translateX(70%) translateY(-70%);
         opacity: 0;
     }
@@ -419,7 +420,7 @@ h1:hover {
         opacity: 0;
     }
     
-    99% {
+    92% {
         transform: translateX(70%) translateY(-70%);
         opacity: 0;
     }
@@ -442,13 +443,19 @@ h1:hover {
     }
     
     .body2 {
-        width: 10em;
+        width: 8em;
+        top: 30px;
     }
     
     .wing2 {
-        width: 8em;
+        width: 6em;
         top: 15px;
     }
+    
+    h2 {
+        width: 33%;
+    }
+  
    
 }
 @media only screen and (min-width: 100em) {
@@ -458,7 +465,7 @@ h1:hover {
     
     .wing {
         width: 8em;
-        top: 5px;
+        top: 15px;
     }
     
     .body2 {
@@ -467,7 +474,14 @@ h1:hover {
     
     .wing2 {
         width: 8em;
-        top: 5px;
+        top: 15px;
     }
-            
+        
+    h2 {
+        width: 33%;
+    }
+    
+    .topline {
+        height:60px;
+    }
 }
