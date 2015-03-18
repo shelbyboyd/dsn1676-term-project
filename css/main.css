@@ -163,7 +163,24 @@ h1:hover {
     opacity: 1 ;
 }
 
+.article {
+    width: 100%;
+    float: left;
+}
 
+.social-media {
+    width: 33%;
+    max-height: 5em;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    align-content: center;
+}
+
+footer {
+    background-color: #008485;
+    overflow: hidden;
+}
 
 @-webkit-keyframes outside {
     
@@ -452,9 +469,10 @@ h1:hover {
     h2 {
         width: 33%;
     }
-  
+    
    
 }
+
 @media only screen and (min-width: 100em) {
     .body {
         width: 11.5em;
@@ -478,6 +496,15 @@ h1:hover {
         width: 33%;
     }
     
+    .article {
+    width: 50%;
+    float: left;
+    }
 
+    .izze {
+    width: 50%;
+    float: left;
+    }
 }
+
 
