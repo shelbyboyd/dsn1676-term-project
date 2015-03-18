@@ -59,20 +59,20 @@ body {
 
 .name {
     font-family: 'Trocchi', serif;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #1a5858;
     text-align: center;
     position: absolute;    
     top: 50%;
     left: 50%;
     width: 100%;
+    padding: 20px;
     background-color: #008485;
     -webkit-transform: translate(-50%,-100%);
     transform: translate(-50%,-100%);
     z-index: 2;
-    
-
 }
+
 
 .flower {
     z-index: 1;
@@ -99,6 +99,19 @@ h2 {
     width: 100%;
 }
 
+.h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #753855;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+
+
 nav {
     background-color: #753855;
     overflow: hidden;
@@ -113,9 +126,11 @@ nav {
 }
     
 .nav-button {
-    border: none;
+    border-top: 5px solid #E17A7B;
+    border-bottom: 5px solid #E17A7B;
+    border-left: none;
+    border-right: none;
     margin: 0 auto;
-    
 }
 
 .arrow {
@@ -149,24 +164,6 @@ h1:hover {
 }
 
 
-.topline {
-    height: 100%;
-    top: -45px;
-    left:0;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    
-}
-
-.bottomline {
-    height: 8px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2
-}
 
 @-webkit-keyframes outside {
     
@@ -481,7 +478,5 @@ h1:hover {
         width: 33%;
     }
     
-    .topline {
-        height:60px;
-    }
+
 }
