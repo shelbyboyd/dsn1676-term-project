@@ -27,6 +27,8 @@ body {
     background-color: #008485;
     position: relative;
     min-height: 440px;
+    overflow: hidden;
+    max-height: 6em;
 } 
 
 .outside {
