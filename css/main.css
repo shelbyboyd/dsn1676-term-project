@@ -166,7 +166,7 @@ h1:hover {
 .article {
     width: 100%;
     float: left;
-}
+} 
 
 .social-media {
     width: 33%;
@@ -180,6 +180,11 @@ h1:hover {
 footer {
     background-color: #008485;
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color:#FFDABA;
 }
 
 @-webkit-keyframes outside {
@@ -470,6 +475,15 @@ footer {
         width: 33%;
     }
     
+    .article {
+    width: 50%;
+    float: left;
+    }
+
+    .izze {
+    width: 50%;
+    float: left;
+    }
    
 }
 
@@ -496,15 +510,7 @@ footer {
         width: 33%;
     }
     
-    .article {
-    width: 50%;
-    float: left;
-    }
-
-    .izze {
-    width: 50%;
-    float: left;
-    }
+    
 }
 
 
