@@ -148,8 +148,7 @@ h4 {
 
 .info-box {
     position: relative;
-    border: 1px solid red;
-    padding-top: 5em;
+    padding-top: 4em;
 }
 
 .icon {
@@ -191,7 +190,7 @@ h4 {
 
 .social-media {
     margin: 0 auto;
-    padding-top: 6em;
+    padding-top: 2em;
     padding-bottom: 3em;
 }
 
