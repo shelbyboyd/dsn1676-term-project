@@ -135,6 +135,102 @@ nav {
     margin: 0 auto;
 }
 
+h4 {
+    color:#753855;
+    font-size: 1em;
+}
+
+.icon {
+    width: 33%;
+    max-height: 7em;
+    vertical-align: center;
+    margin: 0 auto;
+}
+
+.mobile {
+    transition: mobile 2s ease-in forwards;
+    -webkit-transition: mobile 2s ease-in forwards;
+    opacity: 0;
+}
+
+.email {
+    transition: mobile 2s ease-in forwards;
+    -webkit-transition: mobile 2s ease-in forwards;
+    opacity: 0;
+}
+
+.behance {
+    transition: mobile 2s ease-in forwards;
+    -webkit-transition: mobile 2s ease-in forwards;
+    opacity: 0;
+}
+
+.mobile-show {
+    opacity: 1;
+}
+
+.email-show {
+    opacity: 1;
+}
+
+.behance-show {
+    opacity: 1;
+}
+
+@-webkit-keyframes mobile {
+    0% {
+    opacity: 0;
+    }
+    
+    20% {
+    transform: translateX(5%) translateY(15%)
+    }
+    
+    40% {
+    transform: translateX(5%) translateY(-10%)
+    }
+    
+    60% {
+    transform: translateX(5%) translateY(8%)
+    }
+    
+    80% {
+    transform: translateX(5%) translateY(-8%)
+    }
+    
+    100% {
+    transform: translateX(5%) translateY(4%)
+    }
+    
+}
+
+@keyframes mobile {
+    0% {
+    opacity: 0;
+    }
+    
+    20% {
+    transform: translateX(5%) translateY(15%)
+    }
+    
+    40% {
+    transform: translateX(5%) translateY(-10%)
+    }
+    
+    60% {
+    transform: translateX(5%) translateY(8%)
+    }
+    
+    80% {
+    transform: translateX(5%) translateY(-8%)
+    }
+    
+    100% {
+    transform: translateX(5%) translateY(4%)
+    }
+    
+}
+
 .arrow {
     position: absolute;
     width: 2.5em;
@@ -176,8 +272,20 @@ h1:hover {
     float: left;
     margin: 0 auto;
     padding: 0;
-    align-content: center;
+    vertical-align: center;
 }
+
+figure {
+    margin:0;
+    padding:0;
+}
+
+figcaption {
+    margin:0;
+    padding:0;
+}
+
+
 
 footer {
     background-color: #008485;
