@@ -141,95 +141,44 @@ h4 {
 }
 
 .icon {
-    width: 33%;
-    max-height: 7em;
+    width: 100%;
+    max-height: 5em;
     vertical-align: center;
     margin: 0 auto;
 }
 
 .mobile {
-    transition: mobile 2s ease-in forwards;
-    -webkit-transition: mobile 2s ease-in forwards;
+    width: 33%;
+  
     opacity: 0;
 }
 
 .email {
-    transition: mobile 2s ease-in forwards;
-    -webkit-transition: mobile 2s ease-in forwards;
+    width: 33%;
     opacity: 0;
 }
 
 .behance {
-    transition: mobile 2s ease-in forwards;
-    -webkit-transition: mobile 2s ease-in forwards;
+    width: 33%;
     opacity: 0;
+
 }
 
 .mobile-show {
+ 
     opacity: 1;
 }
 
 .email-show {
+
     opacity: 1;
 }
 
 .behance-show {
+ 
     opacity: 1;
 }
 
-@-webkit-keyframes mobile {
-    0% {
-    opacity: 0;
-    }
-    
-    20% {
-    transform: translateX(5%) translateY(15%)
-    }
-    
-    40% {
-    transform: translateX(5%) translateY(-10%)
-    }
-    
-    60% {
-    transform: translateX(5%) translateY(8%)
-    }
-    
-    80% {
-    transform: translateX(5%) translateY(-8%)
-    }
-    
-    100% {
-    transform: translateX(5%) translateY(4%)
-    }
-    
-}
-
-@keyframes mobile {
-    0% {
-    opacity: 0;
-    }
-    
-    20% {
-    transform: translateX(5%) translateY(15%)
-    }
-    
-    40% {
-    transform: translateX(5%) translateY(-10%)
-    }
-    
-    60% {
-    transform: translateX(5%) translateY(8%)
-    }
-    
-    80% {
-    transform: translateX(5%) translateY(-8%)
-    }
-    
-    100% {
-    transform: translateX(5%) translateY(4%)
-    }
-    
-}
 
 .arrow {
     position: absolute;
@@ -250,7 +199,6 @@ h4 {
     transform: translate(-50%);
     width: 100%;
     text-align: center;
-    
 }
 
 h1:hover {
@@ -267,24 +215,28 @@ h1:hover {
 } 
 
 .social-media {
-    width: 33%;
     max-height: 5em;
-    float: left;
     margin: 0 auto;
-    padding: 0;
-    vertical-align: center;
+    padding-top: 2em;
+    padding-bottom: 10em;
 }
 
-figure {
-    margin:0;
-    padding:0;
+.behance-button {
+    margin: 0 auto;
+}
+
+.mobile-button {
+    margin: 0 auto;
+}
+
+.email-button {
+    margin: 0 auto;
 }
 
 figcaption {
-    margin:0;
-    padding:0;
+    width: 100%;
+    text-align: center;
 }
-
 
 
 footer {
