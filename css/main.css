@@ -136,6 +136,8 @@ nav {
 }
 
 h4 {
+    margin: 0 auto;
+    width: 100%;
     color:#753855;
     font-size: 1em;
 }
@@ -148,18 +150,16 @@ h4 {
 }
 
 .mobile {
-    width: 33%;
-  
     opacity: 0;
 }
 
 .email {
-    width: 33%;
+
     opacity: 0;
 }
 
 .behance {
-    width: 33%;
+
     opacity: 0;
 
 }
