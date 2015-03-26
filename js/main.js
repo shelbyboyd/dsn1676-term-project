@@ -36,5 +36,7 @@ $('.nav').localScroll();
 
 $('.headline').localScroll();
 
+$('.backup').localScroll();
+
 
     

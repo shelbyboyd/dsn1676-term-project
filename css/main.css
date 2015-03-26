@@ -162,11 +162,12 @@ h4 {
     width: 33%;
     height: 3em;
     vertical-align: center;
-    margin: 0 auto;
+    margin: auto;
     background-color: #753855;
     color: #FFDABA;
     border: none;
     font-size: 1em;
+    left: 50%;
 }
 
 .mobile {
