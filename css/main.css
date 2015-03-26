@@ -158,6 +158,17 @@ h4 {
     margin: 0 auto;
 }
 
+.to-top {
+    width: 33%;
+    height: 3em;
+    vertical-align: center;
+    margin: 0 auto;
+    background-color: #753855;
+    color: #FFDABA;
+    border: none;
+    font-size: 1em;
+}
+
 .mobile {
     opacity: 0;
 }
