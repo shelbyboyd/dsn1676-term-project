@@ -33,4 +33,8 @@ $behanceBtn.on ('click', function () {
 });
     
 $('.nav').localScroll();
+
+$('.headline').localScroll();
+
+
     
