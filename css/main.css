@@ -158,16 +158,18 @@ h4 {
     margin: 0 auto;
 }
 
-.to-top {
-    width: 33%;
-    height: 3em;
-    vertical-align: center;
-    margin: auto;
-    background-color: #753855;
-    color: #FFDABA;
-    border: none;
-    font-size: 1em;
-    left: 50%;
+.arrow2 {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    left: 45%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    bottom: 10px;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+
+
 }
 
 .mobile {
