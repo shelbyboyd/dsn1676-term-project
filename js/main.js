@@ -32,5 +32,5 @@ $behanceBtn.on ('click', function () {
     $mobile.removeClass ('mobile-show');
 });
     
-
+$('.nav').localScroll();
     
