@@ -162,12 +162,13 @@ h4 {
     position: relative;
     width: 2.5em;
     height: 2.5em;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    bottom: 10px;
+    left: 42%;
+    vertical-align: center;
+    margin: 5px; 
+    top: 20px;
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
+
 }
 
 .mobile {
@@ -202,26 +203,31 @@ h4 {
 
 .social-media {
     margin: 0 auto;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 3em;
 }
 
 .behance-button {
     margin: 0 auto;
+    background: none;
+    height: 8em;
+    border: none;
 }
 
 .mobile-button {
     margin: 0 auto;
+    background: none;
+    height: 8em;
+    border: none;
 }
 
 .email-button {
     margin: 0 auto;
+    background: none;
+    height: 8em;
+    border: none;
 }
 
-figcaption {
-    width: 100%;
-    text-align: center;
-}
 
 footer {
     background-color: #008485;
