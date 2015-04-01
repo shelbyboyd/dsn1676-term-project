@@ -162,7 +162,9 @@ h4 {
     position: relative;
     width: 2.5em;
     height: 2.5em;
-    left: 42%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
     vertical-align: center;
     margin: 5px; 
     top: 20px;
