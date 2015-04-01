@@ -163,8 +163,8 @@ h4 {
     width: 2.5em;
     height: 2.5em;
     left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
+    -webkit-transform: translate(-60%);
+    transform: translate(-60%);
     vertical-align: center;
     margin: 5px; 
     top: 20px;
