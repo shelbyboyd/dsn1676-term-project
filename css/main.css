@@ -158,17 +158,21 @@ h4 {
 
 .arrow2 {
     position: relative;
-    width: 2.5em;
-    height: 2.5em;
+    width: 4em;
+    height: 4em;
     left: 50%;
-    -webkit-transform: translate(-60%);
-    transform: translate(-60%);
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
     vertical-align: center;
     margin: 5px; 
-    top: 20px;
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg);
+    top: 3px;
+   
 }
+
+.typography, .advertisement, .logo-design {
+    clear: both;
+}
+    
 
 .mobile {
     opacity: 0;
@@ -200,32 +204,60 @@ h4 {
     opacity: 1;
 }
 
-.social-media {
-    margin: 0 auto;
-    padding-top: 1em;
-    padding-bottom: 3em;
+#hedgehog {
+    display: block;
+    overflow: hidden;
+    width: 6em;
+    -webkit-animation: walkaround 8s forwards;
+    animation: walkaround 8s forwards;
+}
+
+-webkit-@keyframes walkaround {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    
+    100% {
+        -webkit-transform: translateX(100%)
+    }
+}
+
+@keyframes walkaround {
+    0% {
+        transform: translateX(0%);
+    }
+    
+    100% {
+        transform: translateX(100%)
+    }
 }
 
 .behance-button {
+    display: block;
     margin: 0 auto;
     background: none;
     height: 8em;
+    width: 8em;
     border: none;
     z-index: 3;
 }
 
 .mobile-button {
+    display: block;
     margin: 0 auto;
     background: none;
     height: 8em;
+    width: 8em;
     border: none;
     z-index: 3;
 }
 
 .email-button {
+    display: block;
     margin: 0 auto;
     background: none;
     height: 8em;
+    width: 8em;
     border: none;
     z-index: 3;
 }
@@ -234,6 +266,9 @@ h4 {
 footer {
     background-color: #008485;
     overflow: hidden;
+    clear: both;
+    max-height: 25em;
+    padding-top: 50px;
 }
 
 @-webkit-keyframes wiggle {
@@ -479,6 +514,8 @@ a {
     width: 3em;
     -webkit-animation: flap 1s linear infinite;
     animation: flap 1s linear infinite;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
 }
 
 
@@ -495,17 +532,16 @@ a {
    
     0% {
         -webkit-transform: scaleY(1);
-        -wekbit-transform-origin: bottom;
+
     }
     
     50% {
         -webkit-transform: scaleY(-1);
-        -webkit-transform-origin: bottom;
     }
     
     100% {
         -webkit-transform: scaleY(1);
-        -webkit-transform-origin: bottom;
+    
     }
 }  
 
@@ -514,17 +550,16 @@ a {
    
     0% {
         transform: scaleY(1);
-        transform-origin: bottom;
+
     }
     
     50% {
         transform: scaleY(-1);
-        transform-origin: bottom;
+
     }
     
     100% {
         transform: scaleY(1);
-        transform-origin: bottom;
     }
 }  
 
