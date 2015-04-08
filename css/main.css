@@ -215,11 +215,13 @@ h4 {
 }
 
 #right-leg {
+    -webkit-animation: rightleg .5s infinite;
     animation: rightleg .5s infinite;
     transform-origin: top center;
 }
 
 #left-leg {
+    -webkit-animation: rightleg .5s infinite;
     animation: leftleg .5s infinite;
     transform-origin: top center;
 }
@@ -256,6 +258,18 @@ h4 {
     }
 }
 
+-webkit-@keyframes leftleg {
+    0% {
+        -webkit-transform: rotate(5deg);
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+    }
+    100% {
+        -webkit-transform: rotate(5deg);
+    }
+}
+
 @keyframes leftleg {
     0% {
         transform: rotate(5deg);
@@ -265,6 +279,18 @@ h4 {
     }
     100% {
         transform: rotate(5deg);
+    }
+}
+
+-webkit-@keyframes rightleg {
+    0% {
+        -webkit-transform: rotate(-5deg);
+    }
+    50% {
+        -webkit-transform: rotate(10deg);
+    }
+    100% {
+        -webkit-transform: rotate(-5deg);
     }
 }
 
