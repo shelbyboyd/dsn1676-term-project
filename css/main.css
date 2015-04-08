@@ -207,28 +207,76 @@ h4 {
 #hedgehog {
     display: block;
     overflow: hidden;
+    position: relative;
+    bottom: 10px;
     width: 6em;
-    -webkit-animation: walkaround 8s forwards;
-    animation: walkaround 8s forwards;
+    -webkit-animation: walkaround ease-in 8s infinite;
+    animation: walkaround ease-in 8s infinite;
+}
+
+#right-leg {
+    animation: rightleg .5s infinite;
+    transform-origin: top center;
+}
+
+#left-leg {
+    animation: leftleg .5s infinite;
+    transform-origin: top center;
 }
 
 -webkit-@keyframes walkaround {
     0% {
-        -webkit-transform: translateX(0%);
+        -webkit-left:10px;
+        transform: scale(1);
+    }
+    
+    95% {
+        -webkit-opacity(1);
     }
     
     100% {
-        -webkit-transform: translateX(100%);
+        -webkit-left:500px;
+        -webkit-opacity:0;
     }
 }
 
 @keyframes walkaround {
     0% {
-        transform: translateX(0%);
+        left:10px;
+        transform: scale(1);
+    }
+    
+    95% {
+        opacity(1);
     }
     
     100% {
-        transform: translateX(100%);
+        left:500px;
+        opacity(0);
+    }
+}
+
+@keyframes leftleg {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes rightleg {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-5deg);
     }
 }
 
@@ -751,6 +799,37 @@ a {
     float: left;
     }
    
+-webkit-@keyframes walkaround {
+    0% {
+        -webkit-left:10px;
+        transform: scale(1);
+    }
+    
+    95% {
+        -webkit-opacity(1);
+    }
+    
+    100% {
+        -webkit-left:1200px;
+        -webkit-opacity:0;
+    }
+}
+
+@keyframes walkaround {
+    0% {
+        left:10px;
+        transform: scale(1);
+    }
+    
+    95% {
+        opacity(1);
+    }
+    
+    100% {
+        left:1200px;
+        opacity(0);
+    }
+}
 }
 
 @media only screen and (min-width: 100em) {
@@ -776,7 +855,37 @@ a {
         width: 33%;
     }
     
+-webkit-@keyframes walkaround {
+    0% {
+        -webkit-left:10px;
+        transform: scale(1);
+    }
     
+    95% {
+        -webkit-opacity(1);
+    }
+    
+    100% {
+        -webkit-left:1500px;
+        -webkit-opacity:0;
+    }
+}
+
+@keyframes walkaround {
+    0% {
+        left:10px;
+        transform: scale(1);
+    }
+    
+    95% {
+        opacity(1);
+    }
+    
+    100% {
+        left:1500px;
+        opacity(0);
+    }
+}
 }
 
 
