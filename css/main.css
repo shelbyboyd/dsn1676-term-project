@@ -226,7 +226,7 @@ h4 {
     transform-origin: top center;
 }
 
--webkit-@keyframes walkaround {
+@-webkit-keyframes walkaround {
     0% {
         -webkit-left:10px;
         transform: scale(1);
@@ -258,7 +258,7 @@ h4 {
     }
 }
 
--webkit-@keyframes leftleg {
+@-webkit-keyframes leftleg {
     0% {
         -webkit-transform: rotate(5deg);
     }
@@ -282,7 +282,7 @@ h4 {
     }
 }
 
--webkit-@keyframes rightleg {
+@-webkit-keyframes rightleg {
     0% {
         -webkit-transform: rotate(-5deg);
     }
