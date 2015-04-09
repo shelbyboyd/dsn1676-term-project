@@ -39,4 +39,13 @@ $('.headline').localScroll();
 $('.backup').localScroll();
 
 
+
+var $hogSection = $('.hedgehog');
+
+
+$hogSection.waypoint(function () {
+  $hogSection.toggleClass('js-active');
+}, {offset: '130%'});
+
+
     

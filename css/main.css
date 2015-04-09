@@ -209,10 +209,18 @@ h4 {
     overflow: hidden;
     position: relative;
     bottom: 10px;
+    padding-bottom: 10px;
     width: 6em;
+    opacity: 0;
+    transition: all 500ms linear;
+}
+
+.js-active #hedgehog {
+    opacity: 1;
     -webkit-animation: walkaround ease-in 8s infinite;
     animation: walkaround ease-in 8s infinite;
 }
+  
 
 #right-leg {
     -webkit-animation: rightleg .5s infinite;
@@ -230,10 +238,11 @@ h4 {
     0% {
         -webkit-left:10px;
         transform: scale(1);
+        -webkit-opacity: 1;
     }
     
     95% {
-        -webkit-opacity(1);
+        -webkit-opacity: 1;
     }
     
     100% {
@@ -246,15 +255,16 @@ h4 {
     0% {
         left:10px;
         transform: scale(1);
+        opacity: 1;
     }
     
     95% {
-        opacity(1);
+        opacity: 1;
     }
     
     100% {
         left:500px;
-        opacity(0);
+        opacity: 0;
     }
 }
 
