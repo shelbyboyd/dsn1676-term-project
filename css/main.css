@@ -825,7 +825,7 @@ a {
     float: left;
     }
    
--webkit-@keyframes walkaround {
+@-webkit-keyframes walkaround {
     0% {
         -webkit-left:10px;
         transform: scale(1);
@@ -881,7 +881,7 @@ a {
         width: 33%;
     }
     
--webkit-@keyframes walkaround {
+@-webkit-keyframes walkaround {
     0% {
         -webkit-left:10px;
         transform: scale(1);
